@@ -28,6 +28,12 @@ http://localhost:8099/
 - Nginx：把三个文件复制到站点根目录。
 - 宝塔/静态网站托管：上传三个文件即可。
 
+当前仓库已配置 GitHub Pages Actions。推送到 `main` 后，公网地址通常是：
+
+```text
+https://javelin-dot.github.io/5days/
+```
+
 ## 功能
 
 - 按 `西安旅游攻略.xlsx` 的 5 天路线生成日程卡片。
