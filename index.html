@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f2ea" />
+    <title>西安旅游路线图</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">2026.6.3 - 6.7</p>
+        <h1>西安旅游路线图</h1>
+        <p class="subtitle">按 Excel 行程生成的手机 MVP，路线、餐食、导航和本地搜索都放在一页里。</p>
+      </div>
+      <a class="primary-action" id="openToday" href="#day-1">今日行程</a>
+    </header>
+
+    <main>
+      <section class="stay-card" aria-label="民宿地址">
+        <div>
+          <span>民宿地址</span>
+          <strong>西安碑林区合能朱阙1号楼2单元3301室</strong>
+        </div>
+        <div class="stay-actions">
+          <a
+            class="link-button map"
+            href="https://uri.amap.com/search?keyword=%E8%A5%BF%E5%AE%89%E7%A2%91%E6%9E%97%E5%8C%BA%E5%90%88%E8%83%BD%E6%9C%B1%E9%98%991%E5%8F%B7%E6%A5%BC2%E5%8D%95%E5%85%833301%E5%AE%A4&city=%E8%A5%BF%E5%AE%89&src=mvp-xian-route"
+            target="_blank"
+            rel="noopener"
+          >高德导航</a>
+        </div>
+      </section>
+
+      <section class="route-map" aria-label="路线概览">
+        <div class="route-line" aria-hidden="true"></div>
+        <div class="route-stop">
+          <span>1</span>
+          <strong>抵达西安</strong>
+          <small>钟鼓楼夜景</small>
+        </div>
+        <div class="route-stop">
+          <span>2</span>
+          <strong>陕历博</strong>
+          <small>大雁塔/不夜城</small>
+        </div>
+        <div class="route-stop">
+          <span>3</span>
+          <strong>兵马俑</strong>
+          <small>华清宫/长恨歌</small>
+        </div>
+        <div class="route-stop">
+          <span>4</span>
+          <strong>城墙</strong>
+          <small>考古博物馆</small>
+        </div>
+        <div class="route-stop">
+          <span>5</span>
+          <strong>返程</strong>
+          <small>机动补给</small>
+        </div>
+      </section>
+
+      <nav class="day-tabs" id="dayTabs" aria-label="日期切换"></nav>
+      <section class="days" id="days"></section>
+    </main>
+
+    <footer class="footer">
+      <p>导航优先使用高德 Web 链接；微信内可直接打开网页，若已安装 App 通常会提示跳转。</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
